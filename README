@@ -1,5 +1,5 @@
 NAME
-    Net::IPAddress::Filter::IPFilterDat - An IP address filter from
+    Net::IPAddress::Filter::IPFilterDat - A fast IP address filter from
     ipfilter.dat
 
 VERSION
@@ -19,6 +19,18 @@ SYNOPSIS
         print "BLOCKED\n" if $filter->in_filter('192.168.1.20');
 
 DESCRIPTION
+    An ipfilter.dat file holds a list of IP address ranges, and is often
+    used by p2p clients such as eMule or various bittorrent clients to block
+    connections to or from the listed addresses.
+
+    Net::IPAddress::Filter::IPFilterDat can read in these files and provides
+    a fast (greater than 100k lookups per second) way of seeing if an IP
+    address should be filtered/blocked.
+
+    There is a dependency on the XS module Set::IntervalTree so a c++
+    compiler is required. The XS data structure is the reason for the small
+    RAM usage and high performance of the IP address filter.
+
 METHODS
   load_file( )
     Fetches rows from an ipfilter.dat-formatted file and adds the ranges to
@@ -61,7 +73,21 @@ FUNCTIONS
         Otherwise undef.
 
 TODO
+    *   Support for reading zipped or gzipped ipfilter.dat files.
+
+    *   Support for the score field in ipfilter.dat.
+
 SEE ALSO
+    *   Net::IPAddress::Filter - The parent class of this module. All
+        methods of
+
+        the parent can also be used.
+
+    *   NET::IPFilter - Pure Perl extension for Accessing eMule / Bittorrent
+
+        IPFilter.dat Files and checking a given IP against this ipfilter.dat
+        IP Range.
+
 BUGS OR FEATURE REQUESTS
     See
     https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IPAddress-Filter-I

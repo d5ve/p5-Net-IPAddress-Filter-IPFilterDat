@@ -3,7 +3,7 @@ NAME
     ipfilter.dat
 
 VERSION
-    version 20121119
+    version 20121119.02
 
 SYNOPSIS
         use Net::IPAddress::Filter::IPFilterDat;
@@ -93,7 +93,7 @@ BUGS OR FEATURE REQUESTS
     https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IPAddress-Filter-I
     PFilterDat to report and view bugs, or to request features.
 
-    Alternatively, email bug-Net-IPAddress-Filter-Dat@rt.cpan.org
+    Alternatively, email bug-Net-IPAddress-Filter-IPFilterDat@rt.cpan.org
 
 REPOSITORY
     Net::IPAddress::Filter::IPFilterDat is hosted on github at

@@ -8,7 +8,7 @@ use warnings;
 
 use Scalar::Util ();
 
-use Net::IPAddress::Filter;
+use Net::IPAddress::Filter 20121117;
 use base qw( Net::IPAddress::Filter );
 
 =head1 SYNOPSIS
@@ -170,7 +170,7 @@ __END__
 
 =for :list
 * Support for reading zipped or gzipped ipfilter.dat files.
-* Support for the score field in ipfilter.dat
+* Support for the score field in ipfilter.dat.
 
 =head1 SEE ALSO
 

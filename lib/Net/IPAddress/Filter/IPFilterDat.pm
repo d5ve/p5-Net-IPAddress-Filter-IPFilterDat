@@ -185,7 +185,7 @@ IPFilter.dat Files and checking a given IP against this ipfilter.dat IP Range.
 See F<https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IPAddress-Filter-IPFilterDat>
 to report and view bugs, or to request features.
 
-Alternatively, email F<bug-Net-IPAddress-Filter-Dat@rt.cpan.org>
+Alternatively, email F<bug-Net-IPAddress-Filter-IPFilterDat@rt.cpan.org>
 
 =head1 REPOSITORY
 
